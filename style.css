@@ -9,7 +9,7 @@ html, body {
 
 .topnav {
   overflow: hidden;
-  background-color: grey;
+  background-color: #d25189;
   margin-top: 0px;
   display: flex;
   justify-content: space-around;
@@ -27,12 +27,12 @@ html, body {
 }
 
 .topnav a:hover {
-  background-color: #e72323;
+  background-color: #fd5d95;
   color:#5c09d7;
 }
 .topnav a.active {
-  background-color: #e72323;
-  color: black;
+  background-color: #711439;
+  color: #bb587b;
 }
 
   .sidebar {
@@ -41,20 +41,20 @@ html, body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #0e0e11;
+    background-color: #851d9a;
   }
 
   .sidebar a {
     padding: 10px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: #d3abab;
     display: block;
   }
 
   .sidebar a:hover {
-    background-color: #e72323;
-    color: black;
+    background-color: #ca819b;
+    color: #da1b8a;
   }
 
 main, footer {
@@ -69,7 +69,7 @@ footer {
   padding: 10px;
   position: fixed;
   bottom: 0;
-  width: 70px;
+  width: 50px;
 }
 
 button {

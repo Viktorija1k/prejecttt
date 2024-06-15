@@ -42,6 +42,15 @@ function text() {
     konteksts.lineWidth = 5;
 
 }
+
+function aprekins() {
+let vards = document.getElementById("vards").value;
+let pirmais= parseFloat(document.getElementById("a").value);
+let otrais= parseFloat(document.getElementById("b").value);
+let summa= pirmais*otrais;
+console.log("Tevi sauc: " + vards + " Atbilde ir:" + summa);
+document.getElementById("rezultats").innerHTML = "Tevi sauc:" + vards + " <br> Tu ievadiji a vertibu:" + pirmais + "<br> un otra vertiba: " + otrais + "<br> Atbilde ir:" + summa;
+}
   
   
 
