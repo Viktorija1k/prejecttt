@@ -13,22 +13,24 @@
 <body>
   <header> <!-- Sis ir mans virsrakts-->
     <nav class="topnav">
-      <a href="index.html" class="active">Sakums</a>
-      <a href="par mums.html">Par mums</a>
-      <a href="kontakti.html">Kontakti</a>
+    <a href="index.html" class="active">Sākums</a>
+    <a href="par mums.html">Par mums</a>
+    <a href="kontakti.html">Kontakti</a>
     </nav>
     
 </header>
   <aside class="sidebar">
-    <a href="#Content">content</a>
+    <a href="#Saturs">Saturs</a>
     <a href="#Tabula">Tabula</a>
+    <a href="portfolio lapa.html">Portfolio</a>
   </aside>
    <main>
-     <h1>Sveiki,pasaule!</h1>
+     <h1 style="text-align:center;font-family:Times New Roman";>Sveiki,pasaule!</h1>
      <p> Welcome guest!</p>
-  <section id="content"
-  <p>Sis ir mans pirmais HTML!</p>
-  <img src="fon.jpg" class="img-thumbnail width=" alt="Cinque Terre" 100px">
+  <section id="Saturs"
+  <section id="Portfolio"
+  <p>Šis ir mans pirmais HTML!</p>
+  <img src="fon.jpg"class="rounded-circle" alt="Cinque Terre" width="350" height="450"> 
   <br>
   <ul type="square">
     <li> Pirmais elemets</li>
@@ -38,15 +40,18 @@
     <li>Apaksa elements 2</li>
   </ul>
   </li>
-    <li>Tresais elements</li>
+    <li>Trešais elements</li>
     <ol/></ol>
   </ul>
   <a href="par_mums.html">Par mums</a>
   <a href="kontakti.html"> Sazinaties</a>
+  <a href="my map.html">Karte</a>
+  <a href="portfolio lapa.html">Portfolio</a>
+    <br></br>
     </section>
-    <section id="tabula">
-      <table border="1">
-  <table border="1">
+  <section id="Tabula">
+  <table border="2">
+  <table border="2">
     <tr>
     <td>1.rinda 1.kolonna</td>
     <td>1.rinda 2.kolonna</td>
@@ -65,29 +70,108 @@
   </tr>
   </table>
   </section>
-  <section id="canva">
-    <canvas id="zimejums" widht="500" height="400"></canvas><br>
-    <button onclick="taisni()">paradi taisni!</button>
-    <button onclick="aplis()">paradi apli!</button>
-    <button onclick="linija()">paradi linija!</button>
-    <button onclick="text()">paradi textu!</button>
+
+  <body>
+    <br></br>
+    <p>Darbnieku saraksts:</p>
+    <table style="width:90%">
+    <tr>
+    <th>Vards</th>
+    <th>Uzvards</th>
+    <th>Vecums</th>
+    </tr>
+    <tr>
+    <td>Jānis</td>
+    <td>Ezerskis</td>
+    <td>25</td>
+    </tr>
+    <tr>
+    <td>Tatija</td>
+    <td>Markelņa</td>
+    <td>24</td>
+    </tr>
+    <tr>
+    <td>Elvis</td>
+    <td>Kalniņš</td>
+    <td>27</td>
+    </tr>
+</table>
+</body>
+</head>
+<body>
+ <h3></h3>
+ <p>Grafiku maiņas:</p>
+ <table style="width:70%">
+ <tr>
+ <th>MON</th>
+ <th>TUE</th>
+ <th>WED</th>
+ <th>THU</th>
+ <th>FRI</th>
+ <th>SAT</th>
+ <th>SUN</th>
+  </tr>
+  <tr>
+  <td>Jānis</td>
+  <td>Elvis</td>
+  <td> </td>
+  <td>Elvis</td>
+  <td> </td>
+  <td>Elvis</td>
+  <td> </td>
+  </tr>
+  <tr>
+  <td></td>
+  <td> </td>
+  <td>Tatija</td>
+  <td> </td>
+  <td>Tatija</td>
+  <td> </td>
+  <td>Tatija</td>
+  </tr>
+  <tr>
+  <td> </td>
+  <td> </td>
+  <td>Elvis</td>
+  <td>Jānis</td>
+  <td> </td>
+  <td>Jānis</td>
+  <td> </td>
+  </tr>
+  <tr>
+  <td>Tatija</td>
+  <td> </td>
+  <td> </td>
+  <td> </td>
+  <td>Elvis</td>
+  <td> </td>
+  <td>Jānis</td>
+</tr>
+</table>
+</body>
+<br></br> <br></br><br></br><br></br><br></br>
+    <section id="canva">
+    <canvas id="zimejums" widht="500" height="400">
+    </canvas><br>
+    <button onclick="taisni()">parādi taisni!</button>
+    <button onclick="aplis()">parādi apli!</button>
+    <button onclick="linija()">paraāi līnija!</button>
+    <button onclick="text()">parādi textu!</button>
     <button type="button" class="btn btn-outline-info" onclick="aprekins()">Info</button>
   </section>
   <section id= saturs>
-  <lebel for="vards"Ievadi savu vardu</lebel>
+  <lebel for="vards">Ievadi savu vārdu</lebel>
   <input type="text" id="vards" name="vards">
-  <lebel for="a" > Ievadi a vertibu</lebel>
+  <lebel for="a" > Ievadi a vērtibu</lebel>
   <input type="number" id="a">
-  <label for="b"> Ievadi b vertibu</label>
+  <label for="b"> Ievadi b vērtibu</label>
   <input type="number" id="b">
-  <button type="button" class="btn btn-outline-info" onclick="aprekins()">Aprekinat</button>
-    <p id="rezultats"> Seit bus rezultats pec aprekina</p>
-
-    
-  </section>
-  </main>
-  <footer>&copy; Mana firma</footer>
-  <script src="script.js"></script>
+  <button type="button" class="btn btn-outline-info" onclick="aprekins()">Aprēķināt</button>
+  <p id="rezultats"> rezultāts:</p>
+</section>
+</main>
+<footer>&copy; Mana firma</footer>
+<script src="script.js"></script>
 </body>
 
 </html>

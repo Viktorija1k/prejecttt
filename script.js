@@ -1,10 +1,9 @@
-window.onload =function() 
-{
+window.onload =function() {
   
-  var canvas = document.getElementById("zimejums");
-  var ctx = canvas.getContext("2d");
-  ctx.fillStyle = "green";
-  ctx.fillRect(20, 25, 100, 100);
+var canvas = document.getElementById("zimejums");
+var ctx = canvas.getContext("2d");
+ctx.fillStyle = "green";
+ctx.fillRect(20, 25, 100, 100);
 }
 function taisni() {
 var canvas = document.getElementById("zimejums");
@@ -47,8 +46,8 @@ function aprekins() {
 let vards = document.getElementById("vards").value;
 let pirmais= parseFloat(document.getElementById("a").value);
 let otrais= parseFloat(document.getElementById("b").value);
-let summa= pirmais*otrais;
-console.log("Tevi sauc: " + vards + " Atbilde ir:" + summa);
+let summa= pirmais+otrais;
+console.log("Tevi sauc:" + vards + " + Atbilde ir:" + summa);
 document.getElementById("rezultats").innerHTML = "Tevi sauc:" + vards + " <br> Tu ievadiji a vertibu:" + pirmais + "<br> un otra vertiba: " + otrais + "<br> Atbilde ir:" + summa;
 }
   
