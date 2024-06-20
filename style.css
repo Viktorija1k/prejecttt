@@ -4,14 +4,14 @@ html, body {
    padding: 0;
    width: 100%;
    font-family: Times New Roman,serif, sans-serif;
-   background: url(fon2.jpg) no-repeat center fixed; 
+   background: url(bilde3.jpg) no-repeat center fixed; 
    background-size: cover;
    background-color: #92166b;   
   }
 
 .topnav {
   overflow: hidden;
-  background-color: #d5ebf0;
+  background: url(bilde3.jpg) no-repeat center fixed;;
   margin-top: 0%;
   display: flex;
   justify-content: space-around;
@@ -61,15 +61,15 @@ html, body {
     color: #7f0788;
   }
 
-main, footer {
+main {
   margin-left: 100px;
   padding: 30px;
-  background: url(fon2.jpg) no-repeat center fixed; 
+  background: url(bilde3.jpg) no-repeat center fixed; 
   background-size: cover;
 }
 
 footer {
-  background: url(fon2.jpg) no-repeat center fixed; 
+  background: url(bilde3.jpg) no-repeat center fixed; 
   background-size: cover;
   text-align: center;
   padding: 10px;
@@ -101,11 +101,13 @@ h1 {
   color: #ba8a4f;
   font-family: Sofia, sans-serif;
   font-size: 50px;
+  text-align:center;
 }
 p {
   color: #d90d98;
   font-size: 30px;
    width: 100px;
+   text-align:center;
 }
 
 #content {
@@ -136,7 +138,7 @@ p {
 }
 
 #canva {
-  background: url(fon2.jpg) no-repeat center fixed; 
+  background: url(bilde3.jpg) no-repeat center fixed; 
   background-size: cover;
   padding: 20px;
   border-radius: 10px;
@@ -192,6 +194,16 @@ div {
   75%  {background-color:#9f3aa1; left:0px; top:200px;}
   100% {background-color:#00ccff; left:0px; top:0px;}
 }
+
+
+ #lapas {
+  width: 100%;
+  height: 100%;
+  
 }
 
-
+#lapas_saturs {
+  width: 100%;
+  height: 100%;
+}
+ 
