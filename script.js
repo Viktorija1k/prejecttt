@@ -2,15 +2,24 @@ function atjaunotIetvaru(which) {
  document.getElementById("lapas_saturs").innerHTML = '<'+'object id="lapas" type="text/html" data="'+which.href+'"></'+'object>';
 }
 
-window.onload =function() {
+window.onload = function() {
   zimetuzcanvas();
+   var navLinks = document.querySelectorAll('.topnav a');
+   navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      navLinks.forEach(function(link) {
+      link.classList.remove('active');
+    });
+    this.classlist.add('active');                    
+  });
+ });
 }
+
 function zimetuzcanvas() {
 var canvas = document.getElementById("zimejums"); 
 var konteksts= canvas.getContext("2d");
 konteksts.fillStyle = "green";
 konteksts.fillRect(20, 25, 100, 100);
-  
 }
 
 function taisni() {
@@ -41,7 +50,7 @@ var konteksts = canvas.getContext("2d");
   konteksts.strokeStyle = "blue";
   konteksts.stroke();
 }
-function text() {
+ function text() {
   var canvas = document.getElementById("zimejums");
   var konteksts = canvas.getContext("2d");
     konteksts.font = "30px Arial";
@@ -55,7 +64,23 @@ function aprekins() {
 let vards = document.getElementById("vards").value;
 let pirmais= parseFloat(document.getElementById("a").value);
 let otrais= parseFloat(document.getElementById("b").value);
- let summa= pirmais+otrais;
+if (!vards.match(/^\S[a-zA-Zā-žĀ-Ž\s]*$/)) {
+    alert(" Lūdzu ievadiet vārdu!");
+    return;
+}
+  
+if (pirmais === "" || otrais === "" || isNaN(pirmais) || isNaN(otrais)) {
+    alert("Ievadiet skaitļi!");
+    return;
+  }
+
+
+if (!Number.isInteger(Number(pirmais)) || !Number.isInteger(Number(otrais))) {
+    alert("Ievadiet veselu skaitli!");
+    return;
+    }
+  
+let summa= pirmais+otrais;
 console.log("Tevi sauc:" + vards + " + Atbilde ir:" + summa);
 document.getElementById("rezultats").innerHTML = "Tevi sauc:" + vards + " <br> Tu ievadiji a vertibu:" + pirmais + "<br> un otra vertiba: " + otrais + "<br> Atbilde ir:" + summa;
 }

@@ -6,7 +6,7 @@ html, body {
    font-family: Times New Roman,serif, sans-serif;
    background: url(bilde3.jpg) no-repeat center fixed; 
    background-size: cover;
-   background-color: #92166b;   
+   background-color: #e87dc6;   
   }
 
 .topnav {
@@ -58,7 +58,7 @@ html, body {
 
   .sidebar a:hover {
     background-color: #c49ad0;
-    color: #7f0788;
+    color: #ec32d3;
   }
 
 main {
